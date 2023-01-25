@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    background-color: var(--Light-gray);
+}
+
+.card{
+    width: 322px;
+    min-height: 480px;
+    background-color: white;
+    padding: 16px 16px 1px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 155px auto;
+    border-radius: 10px;
+}
+
+.img-content{
+    width: 288px;
+    height: 287px;
+}
+
+.img-content img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.descripcion{
+    padding: 14px 34px 15px 34px;
+    text-align: center;
+}
+
+.descripcion h3{
+    color: var(--Dark-blue);
+    font-size: 20px;
+    font-weight: 700;
+    width: 255px;
+    padding-bottom: 20px;
+}
+
+.descripcion p{
+    color: var(--Grayish-blue);
+    font-weight: 400;
+    width: 255px;
+}
+
+.attribution{
+    text-align: center;
+}
+
+@media(max-width:660px){
+    .card{
+        width: 322px;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .attribution{
+        text-align: center;
+        display: none;
+    }
+}
